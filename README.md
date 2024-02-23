@@ -1,1 +1,1 @@
-#These are tasks from SPOJ.
+#W tym repozytorium znajdziesz zadania z SPOJ.
