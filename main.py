@@ -1,14 +1,10 @@
-# ID_549
+# ID_568
 
-from functions import proste_dodawanie
+from functions import Zabawne_Dodawanie_Piotrusia
 
 ilosc_przypadkow = int(input("Ilość przypadkow: "))
 print("------------------------------------------------")
 
 for i in range(ilosc_przypadkow):
-    ilosc_liczb = int(input("Podaj ilość liczb: "))
-    liczby = []
-    for i in range(ilosc_liczb):
-        liczba = int(input("Podaj liczbę: "))
-        liczby.append(liczba)
-    proste_dodawanie(liczby)
+    liczba = input("Podaj liczbę: ")
+    Zabawne_Dodawanie_Piotrusia(liczba)
