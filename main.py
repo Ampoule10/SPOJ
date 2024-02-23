@@ -1,0 +1,1 @@
+print("Tu będą zadania ze SPOJ.")
