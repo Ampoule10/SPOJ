@@ -1,11 +1,10 @@
-def liczba_pierwsza(l_1):
-    counter = 0
+#ID_496
+def dwie_cyfry_silni(l_1):
+    silnia = 1
     for i in range(l_1):
-        if l_1 % (i+1) == 0:
-            counter += 1
-    if counter == 2:
-        print("TAK, to jest liczba pierwsza.")
-        print("------------------------------------------------")
-    else:
-        print("NIE, to nie jest liczba pierwsza.")
-        print("------------------------------------------------")
+        silnia = silnia * (i+1)
+
+    print("Silnia:",silnia)
+    print("Liczba dziesiątek:", silnia // 10 % 10)
+    print("liczba jedności:", silnia % 10)
+    print("------------------------------------------------")

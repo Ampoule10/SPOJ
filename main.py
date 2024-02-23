@@ -1,10 +1,11 @@
-#ID_438
-from functions import liczba_pierwsza
+#ID_496
 
-ilosc_przypadkow = int(input("Ilość przypadków: "))
+from functions import dwie_cyfry_silni
+
+ilosc_przypadkow = int(input("Ilość przypadkow: "))
 print("------------------------------------------------")
 
 for i in range(ilosc_przypadkow):
     liczba = int(input("Podaj liczbę: "))
 
-    liczba_pierwsza(liczba)
+    dwie_cyfry_silni(liczba)
