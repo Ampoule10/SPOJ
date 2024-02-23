@@ -1,11 +1,10 @@
-#ID_499
+#ID_506
 
-from functions import potegowanie
+from functions import flamaster
 
 ilosc_przypadkow = int(input("Ilość przypadkow: "))
 print("------------------------------------------------")
 
 for i in range(ilosc_przypadkow):
-    podstawa = int(input("Podaj podstawę: "))
-    wykladnik = int(input("Podaj wykładnik: "))
-    potegowanie(podstawa, wykladnik)
+    litery = input("Podaj duże litery: ")
+    flamaster(litery)
