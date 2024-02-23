@@ -1,0 +1,29 @@
+# Pliki i katalogi wygenerowane przez PyCharm
+.idea/
+
+# Pliki pycache wygenerowane przez interpreter Pythona
+__pycache__/
+
+# Plik zawierający ustawienia lokalne dla PyCharm
+*.iml
+
+# Katalog zawierający pliki konfiguracyjne dla PyCharm
+/.idea
+
+# Pliki debugowania
+*.pyc
+*.pyo
+*.pyd
+
+# Pliki cachowania
+*.pyc
+
+# Pliki generowane przez interpreter Pythona
+*.pyo
+*.pyc
+
+# Pliki logów
+*.log
+
+# Katalog z generowanymi dokumentacjami
+/docs/
