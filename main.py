@@ -1,11 +1,14 @@
-#ID_522
+# ID_549
 
-from functions import przedszkolanka
+from functions import proste_dodawanie
 
 ilosc_przypadkow = int(input("Ilość przypadkow: "))
 print("------------------------------------------------")
 
 for i in range(ilosc_przypadkow):
-    grupa_1 = int(input("Podaj ilość w grupie 1: "))
-    grupa_2 = int(input("Podaj ilość w grupie 2: "))
-    przedszkolanka(grupa_1,grupa_2)
+    ilosc_liczb = int(input("Podaj ilość liczb: "))
+    liczby = []
+    for i in range(ilosc_liczb):
+        liczba = int(input("Podaj liczbę: "))
+        liczby.append(liczba)
+    proste_dodawanie(liczby)
