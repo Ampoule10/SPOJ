@@ -1,10 +1,11 @@
-#ID_506
+#ID_522
 
-from functions import flamaster
+from functions import przedszkolanka
 
 ilosc_przypadkow = int(input("Ilość przypadkow: "))
 print("------------------------------------------------")
 
 for i in range(ilosc_przypadkow):
-    litery = input("Podaj duże litery: ")
-    flamaster(litery)
+    grupa_1 = int(input("Podaj ilość w grupie 1: "))
+    grupa_2 = int(input("Podaj ilość w grupie 2: "))
+    przedszkolanka(grupa_1,grupa_2)

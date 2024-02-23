@@ -1,1 +1,1 @@
-W tym repozytorium znajdziesz zadania z SPOJ.
+W tym repozytorium znajdziesz rozwiązania zadań z SPOJ.
