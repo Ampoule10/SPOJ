@@ -1,10 +1,8 @@
-#ID_496
-def dwie_cyfry_silni(l_1):
-    silnia = 1
-    for i in range(l_1):
-        silnia = silnia * (i+1)
+# ID_499
+def potegowanie(l_1, l_2):
+    wynik = pow(l_1, l_2)
 
-    print("Silnia:",silnia)
-    print("Liczba dziesiątek:", silnia // 10 % 10)
-    print("liczba jedności:", silnia % 10)
+    print("----->")
+    print("Wynik potęgowania:", wynik)
+    print("Liczba jedności:", wynik % 10)
     print("------------------------------------------------")

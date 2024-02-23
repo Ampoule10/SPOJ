@@ -1,11 +1,11 @@
-#ID_496
+#ID_499
 
-from functions import dwie_cyfry_silni
+from functions import potegowanie
 
 ilosc_przypadkow = int(input("Ilość przypadkow: "))
 print("------------------------------------------------")
 
 for i in range(ilosc_przypadkow):
-    liczba = int(input("Podaj liczbę: "))
-
-    dwie_cyfry_silni(liczba)
+    podstawa = int(input("Podaj podstawę: "))
+    wykladnik = int(input("Podaj wykładnik: "))
+    potegowanie(podstawa, wykladnik)
