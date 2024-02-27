@@ -1,9 +1,10 @@
-# ID_609
+# ID_617
+from functions import string_merge
 
-from functions import pole_pewnego_kola
+ilosc_testow = int(input("Podaj ilosc testow: "))
+print("-----------------------------------------------------")
 
-r = int(input("Podaj 'r': "))
-d = int(input("Podaj 'd': "))
-pole_pewnego_kola(r,d)
-
-# https://lazyadminblog.blogspot.com/2017/12/00018-609-pole-pewnego-koa-wwwplspojcom.html
+for i in range(ilosc_testow):
+    str_1 = input("Pierwszy string: ")
+    str_2 = input("Drugi string: ")
+    string_merge(str_1, str_2)

@@ -1,14 +1,16 @@
-# ID_609
-import math
+# ID_617
 
 
-def pole_pewnego_kola(r, d):
-    if d >= 2 * r:
-        wynik = 0.00
-    elif d == 0:
-        wynik = math.pi * r * r
+def string_merge(str_1, str_2):
+    wynik = ""
+
+    if len(str_1) <= len(str_2):
+        ilosc_iteracji = len(str_1)
     else:
-        r_szukanego_kola = math.sqrt((r * r) - ((d / 2) * (d / 2)))
-        wynik = math.pi * r_szukanego_kola * r_szukanego_kola
-        zaokraglony_wynik = round(wynik, 2)
-        print("Wynik:", zaokraglony_wynik)
+        ilosc_iteracji = len(str_2)
+
+    for i in range(ilosc_iteracji):
+        str_3 = str_1[i] + str_2[i]
+        wynik = wynik + str_3
+    print("Wynik:",wynik)
+    print("-----------------------------------------------------")
