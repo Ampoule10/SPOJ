@@ -1,30 +1,22 @@
-# ID_601
+# ID_606
 
-def NWD(l_1, l_2):
-
-    dzielniki_1 = []
-    dzielniki_2 = []
-
-    for i in range(l_1):
-        if l_1 % (i + 1) == 0:
-            dzielniki_1.append(i + 1)
-
-    for i in range(l_2):
-        if l_2 % (i + 1) == 0:
-            dzielniki_2.append(i + 1)
-
-    wspolne_dzielniki = []
-
-    for i in range(len(dzielniki_1)):
-        x = dzielniki_1[i]
-        for j in range(len(dzielniki_2)):
-            y = dzielniki_2[j]
-            if x == y:
-                nwd = x
-
-    print("NWD =", nwd)
-    print("------------------------------------")
+def odwrocona_tablica(ile_liczb):
+    liczby = []
+    for j in range(ile_liczb):
+        liczba = input("Podaj liczbę: ")
+        liczby.append(liczba)
+    odwrocone = liczby[::-1]
+    print("Początkowa kolejność:", liczby)
+    print("Odwrócona kolejność:", odwrocone)
 
 
-
-
+########################################################################################
+# def odwrocona_tablica(liczby,ilosc_liczb):
+#
+#     odwrocona = liczby[::-1]
+#     if len(liczby) != ilosc_liczb:
+#         print("Niepoprawna ilość liczb :(")
+#         print("------------------------------------------------")
+#     else:
+#         print("Odwrócona kolejność liczb:",odwrocona)
+#         print("------------------------------------------------")
