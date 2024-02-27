@@ -11,4 +11,4 @@ def pole_pewnego_kola(r, d):
         r_szukanego_kola = math.sqrt((r * r) - ((d / 2) * (d / 2)))
         wynik = math.pi * r_szukanego_kola * r_szukanego_kola
         zaokraglony_wynik = round(wynik, 2)
-    print("Wynik:", zaokraglony_wynik)
+        print("Wynik:", zaokraglony_wynik)
