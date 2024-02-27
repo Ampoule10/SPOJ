@@ -1,22 +1,14 @@
-# ID_606
-
-def odwrocona_tablica(ile_liczb):
-    liczby = []
-    for j in range(ile_liczb):
-        liczba = input("Podaj liczbę: ")
-        liczby.append(liczba)
-    odwrocone = liczby[::-1]
-    print("Początkowa kolejność:", liczby)
-    print("Odwrócona kolejność:", odwrocone)
+# ID_609
+import math
 
 
-########################################################################################
-# def odwrocona_tablica(liczby,ilosc_liczb):
-#
-#     odwrocona = liczby[::-1]
-#     if len(liczby) != ilosc_liczb:
-#         print("Niepoprawna ilość liczb :(")
-#         print("------------------------------------------------")
-#     else:
-#         print("Odwrócona kolejność liczb:",odwrocona)
-#         print("------------------------------------------------")
+def pole_pewnego_kola(r, d):
+    if d >= 2 * r:
+        wynik = 0.00
+    elif d == 0:
+        wynik = math.pi * r * r
+    else:
+        r_szukanego_kola = math.sqrt((r * r) - ((d / 2) * (d / 2)))
+        wynik = math.pi * r_szukanego_kola * r_szukanego_kola
+        zaokraglony_wynik = round(wynik, 2)
+    print("Wynik:", zaokraglony_wynik)
