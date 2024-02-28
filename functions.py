@@ -1,16 +1,17 @@
-# ID_617
+# ID_626
 
+def obzartuchy(ilosc_ciastek_w_pudelku, wszystkie_czasy):
 
-def string_merge(str_1, str_2):
-    wynik = ""
+    suma_ciastek = 0
 
-    if len(str_1) <= len(str_2):
-        ilosc_iteracji = len(str_1)
+    for i in range(len(wszystkie_czasy)):
+        ilosc_ciastek = 86400 // wszystkie_czasy[i]
+        suma_ciastek += ilosc_ciastek
+
+    if suma_ciastek % ilosc_ciastek_w_pudelku == 0:
+        ilosc_pudelek = suma_ciastek // ilosc_ciastek_w_pudelku
     else:
-        ilosc_iteracji = len(str_2)
+        ilosc_pudelek = suma_ciastek // ilosc_ciastek_w_pudelku + 1
 
-    for i in range(ilosc_iteracji):
-        str_3 = str_1[i] + str_2[i]
-        wynik = wynik + str_3
-    print("Wynik:",wynik)
-    print("-----------------------------------------------------")
+    print("Ilość potrzebnych pudełek:", ilosc_pudelek)
+    print("-------------------------------------------------")
