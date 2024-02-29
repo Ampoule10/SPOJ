@@ -1,27 +1,49 @@
-# ID_663
+# ID_675
 
-def sort_1(lista_1, lista_2, lista_3):
-    lista_odleglosci = []
-    lista_stringow = []
+def skarb_finder(lista_kierunek, lista_kroki):
+    suma_x = 0
+    suma_y = 0
 
-    for i in range(len(lista_1)):
-        odleglosc = pow(pow(lista_2[i], 2) + pow(lista_3[i], 2), 0.5)
-        zaokraglona_odleglosc = round(odleglosc, 2)
-        lista_odleglosci.append(zaokraglona_odleglosc)
-        nazwa_i_wspolrzedne = lista_1[i] + " " + str(lista_2[i]) + " " + str(lista_3[i])
-        lista_stringow.append(nazwa_i_wspolrzedne)
+    for i in range(len(lista_kierunek)):
+        if lista_kierunek[i] == 0:
+            suma_y = suma_y + lista_kroki[i]
+        elif lista_kierunek[i] == 1:
+            suma_y = suma_y - lista_kroki[i]
+        elif lista_kierunek[i] == 2:
+            suma_x = suma_x - lista_kroki[i]
+        elif lista_kierunek[i] == 3:
+            suma_x = suma_x + lista_kroki[i]
 
-    dictionary = {}
+    if suma_x == 0 and suma_y == 0:
+        print("-------------------------------------------")
+        print("STUDNIA")
+    elif suma_x == 0:
+        print("-------------------------------------------")
+        print(suma_x, suma_y)
+    elif suma_y == 0:
+        print("-------------------------------------------")
+        print(suma_x, suma_y)
+    else:
+        if suma_y > 0:
+            if suma_x > 0:
+                print("-------------------------------------------")
+                print(0, suma_y)
+                print(3, suma_x)
+            elif suma_x < 0:
+                print("-------------------------------------------")
+                print(0, suma_y)
+                print(2, -suma_x)
+        elif suma_y < 0:
+            if suma_x > 0:
+                print("-------------------------------------------")
+                print(1, -suma_y)
+                print(3, suma_x)
+            elif suma_x < 0:
+                print("-------------------------------------------")
+                print(1, -suma_y)
+                print(2, -suma_x)
+    print("-------------------------------------------")
 
-    posortowane = sorted(lista_odleglosci)
-    print("Posortowanie względem odległości od środka układu współrzędnych:")
-    for key in posortowane:
-        value = lista_stringow[lista_odleglosci.index(key)]
-        # value = lista_stringow[posortowane.index(key)]
-        print(value)
-    print("-------------------------------------------------")
-    print("Lista stringów:", lista_stringow)
-    print("Lista odległości:", lista_odleglosci)
-    # print("Lista odległości po sortowaniu:", posortowane)
-    print("Lista odległości po sortowaniu:", posortowane)
-    print("-------------------------------------------------")
+    # print("Lista kierunek:", lista_kierunek)
+    # print("Lista kroki:", lista_kroki)
+    # print("-------------------------------------------")

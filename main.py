@@ -1,26 +1,18 @@
-# ID_663
+# ID_675
+from functions import skarb_finder
 
-from functions import sort_1
-
-ilosc_testow = int(input("Ilość testów: "))
-print("-------------------------------------------------")
+ilosc_testow = int(input("Podaj ilość testów: "))
+print("-------------------------------------------")
 
 for i in range(ilosc_testow):
-    liczba_punktow = int(input("Liczba punktów: "))
+    ilosc_zestawow = int(input("Podaj ilość zestawów: "))
 
-    lista_nazwy = []
-    lista_wspolrzedne_x = []
-    lista_wspolrzedne_y = []
+    lista_kierunek = []
+    lista_kroki = []
 
-    for j in range(liczba_punktow):
-        nazwa = input("Podaj wielką literę jako nazwę punktu: ")
-        wspolrzedna_x = int(input("Podaj współrzędną x: "))
-        wspolrzedna_y = int(input("Podaj współrzędną y: "))
-        lista_nazwy.append(nazwa)
-        lista_wspolrzedne_x.append(wspolrzedna_x)
-        lista_wspolrzedne_y.append(wspolrzedna_y)
-
-    sort_1(lista_nazwy,lista_wspolrzedne_x,lista_wspolrzedne_y)
-
-
-
+    for j in range(ilosc_zestawow):
+        kierunek = int(input("Podaj cyfrę (kierunek): "))
+        kroki = int(input("Podaj cyfrę (ilość kroków): "))
+        lista_kierunek[len(lista_kierunek):] = [kierunek]
+        lista_kroki[len(lista_kroki):] = [kroki]
+    skarb_finder(lista_kierunek, lista_kroki)
