@@ -1,21 +1,26 @@
-# ID_626
+# ID_663
 
-from functions import obzartuchy
+from functions import sort_1
 
 ilosc_testow = int(input("Ilość testów: "))
 print("-------------------------------------------------")
 
 for i in range(ilosc_testow):
-    ilosc_obzartuchow = int(input("Ilość obżartuchów: "))
-    ilosc_ciastek_w_pudelku = int(input("Ilość ciastek w pudełku: "))
+    liczba_punktow = int(input("Liczba punktów: "))
 
-    wszystkie_czasy = []
+    lista_nazwy = []
+    lista_wspolrzedne_x = []
+    lista_wspolrzedne_y = []
 
-    for j in range(ilosc_obzartuchow):
-        print("Czas jedzenia jednego ciastka przez obżartucha numer", (j+1))
-        jeden_czas = int(input("(Podaj czas w sekundach): "))
-        wszystkie_czasy.append(jeden_czas)
-    obzartuchy(ilosc_ciastek_w_pudelku, wszystkie_czasy)
+    for j in range(liczba_punktow):
+        nazwa = input("Podaj wielką literę jako nazwę punktu: ")
+        wspolrzedna_x = int(input("Podaj współrzędną x: "))
+        wspolrzedna_y = int(input("Podaj współrzędną y: "))
+        lista_nazwy.append(nazwa)
+        lista_wspolrzedne_x.append(wspolrzedna_x)
+        lista_wspolrzedne_y.append(wspolrzedna_y)
+
+    sort_1(lista_nazwy,lista_wspolrzedne_x,lista_wspolrzedne_y)
 
 
 
