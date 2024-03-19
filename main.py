@@ -1,18 +1,13 @@
-# ID_675
-from functions import skarb_finder
+# ID_708
+from functions import Collatz
 
 ilosc_testow = int(input("Podaj ilość testów: "))
-print("-------------------------------------------")
+print("Podaj wartości testów:")
+
+lista = []
 
 for i in range(ilosc_testow):
-    ilosc_zestawow = int(input("Podaj ilość zestawów: "))
+    wartosc_testu = int(input())
+    lista.append(wartosc_testu)
 
-    lista_kierunek = []
-    lista_kroki = []
-
-    for j in range(ilosc_zestawow):
-        kierunek = int(input("Podaj cyfrę (kierunek): "))
-        kroki = int(input("Podaj cyfrę (ilość kroków): "))
-        lista_kierunek[len(lista_kierunek):] = [kierunek]
-        lista_kroki[len(lista_kroki):] = [kroki]
-    skarb_finder(lista_kierunek, lista_kroki)
+Collatz(lista)
