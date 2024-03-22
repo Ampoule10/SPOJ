@@ -1,18 +1,12 @@
-# ID_723
-from functions import ROL
+# ID_769
+from functions import zadanie_probne
 
-ilosc_testow = int(input("Ilość testów: "))
-print("-------------------------------------------------------")
-
-for i in range(ilosc_testow):
-    test = []
-    ilosc_liczb = int(input("Ilość liczb: "))
-    print("Podaj liczby:")
-    for j in range(ilosc_liczb):
-        liczba = input()
-        test.append(liczba)
-    ROL(test)
-    print("-------------------------------------------------------")
-
+print("Liczba A i B mniejsze od 200.")
+A = int(input("Podaj A: "))
+B = int(input("Podaj B: "))
+if A < 200 and B < 200:
+    zadanie_probne(A, B)
+else:
+    print("Liczba spoza zakresu :(")
 
 

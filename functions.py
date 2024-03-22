@@ -1,7 +1,6 @@
-# ID_723
+# ID_769
 
-def ROL(test):
-    print("Wejście:",test)
-    test.append(test[0])
-    print("Wyjście:",test[1:])
+def zadanie_probne(A,B):
+    suma = A + B
+    print("Suma:",suma)
 
